@@ -62,7 +62,7 @@ class HealthResponse(BaseModel):
 class OrganizationListResponse(BaseModel):
     organizations: List[str]
     count: int
-    timestamp: datetime
+    timestamp: str
 
 # Security configuration
 API_KEY = os.getenv("API_KEY", "your-secret-api-key-change-this")
